@@ -617,6 +617,10 @@ func (f *fakeSharedLister) HavePodsWithAffinityList() ([]*framework.NodeInfo, er
 	return nil, nil
 }
 
+func (f *fakeSharedLister) HavePodsWithRequiredAntiAffinityList() ([]*framework.NodeInfo, error) {
+	return nil, nil  // TODO: This will be fixed later. After rebasing.
+}
+
 func (f *fakeSharedLister) Get(nodeName string) (*framework.NodeInfo, error) {
 	return f.nodeInfoMap[nodeName], nil
 }
