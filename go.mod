@@ -1,4 +1,4 @@
-module sigs.k8s.io/scheduler-plugins
+module github.com/openai/scheduler-plugins
 
 go 1.16
 
